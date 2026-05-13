@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Online Store - Quality Manufacturing Solutions for Modern Nigerian Businesses</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Figtree:wght@300;400;500&display=swap">
+    <style>
+        :root {
+            --color-primary: #06060e;
+            --color-accent: #f24900;
+            --color-bg: #F6F6F6;
+            --color-text: #080A14;
+            --color-surface: #0e111a;
+            --color-secondary-accent: #05ae4c;
+            --font-display: 'Outfit', sans-serif;
+            --font-body: 'Figtree', sans-serif;
+            --border-radius: 8px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text);
+            background-color: var(--color-bg);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-display);
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(246, 246, 246, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 5%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-primary);
+        }
+
+        nav .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav .nav-links a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav .nav-links a:hover {
+            color: var(--color-accent);
+        }
+
+        /* Mobile Menu Button */
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+            z-index: 1001;
+        }
+
+        .mobile-menu-btn span {
+            width: 25px;
+            height: 3px;
+            background: var(--color-text);
+            transition: all 0.3s ease;
+            transform-origin: center;
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            position: fixed;
+            top: 70px;
+            right: -100%;
+            width: 300px;
+            height: calc(100vh - 70px);
+            background: var(--color-bg);
+            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+            transition: right 0.3s ease;
+            z-index: 999;
+            padding: 2rem;
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+        }
+
+        .mobile-menu ul li {
+            margin-bottom: 1.5rem;
+        }
+
+        .mobile-menu ul a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            display: block;
+            padding: 0.5rem 0;
+        }
+
+        .mobile-menu ul a:hover {
+            color: var(--color-accent);
+        }
+
+        /* Hero Section */
+        #hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+            animation: fadeUp 0.6s ease forwards;
+        }
+
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.pexels.com/photos/36823725/pexels-photo-36823725.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+        }
+
+        #hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.55);
+            z-index: 2;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            max-width: 900px;
+            padding: 0 5%;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--color-accent);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(242, 73, 0, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(242, 73, 0, 0.4);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 80px 5%;
+            animation: fadeUp 0.6s ease forwards;
+        }
+
+        section:nth-child(2) { animation-delay: 0.1s; }
+        section:nth-child(3) { animation-delay: 0.2s; }
+        section:nth-child(4) { animation-delay: 0.3s; }
+        section:nth-child(5) { animation-delay: 0.4s; }
+        section:nth-child(6) { animation-delay: 0.5s; }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+
+        section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 0.8rem;
+            color: var(--color-primary);
+        }
+
+        /* About Section */
+        #about {
+            background: white;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--color-text);
+        }
+
+        /* Services Section */
+        #services {
+            background: var(--color-bg);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .service-card h3 {
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        /* Process Section */
+        #process {
+            background: white;
+        }
+
+        .process-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .process-card {
+            background: var(--color-bg);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--color-accent);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .process-card h3 {
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .process-card p {
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        /* Why Choose Us Section */
+        #why-choose-us {
+            background: var(--color-surface);
+            color: white;
+        }
+
+        #why-choose-us h2 {
+            color: white;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .why-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .why-card h3 {
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .why-card p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Contact Section */
+        #contact {
+            background: white;
+            text-align: center;
+        }
+
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-content p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-item a {
+            color: var(--color-accent);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: var(--color-primary);
+        }
+
+        .whatsapp-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-top: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+            transition: transform 0.3s ease;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-float::before {
+            content: '💬';
+            font-size: 30px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--color-primary);
+            color: white;
+            text-align: center;
+            padding: 2rem 5%;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            section {
+                padding: 60px 5%;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            section h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            section {
+                padding: 48px 5%;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image {
+                height: 350px;
+            }
+
+            section h2 {
+                font-size: 1.8rem;
+            }
+
+            .services-grid,
+            .process-cards,
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .whatsapp-float::before {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">MY Online Store</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#why-choose-us">Why Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#why-choose-us">Why Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>MY Online Store</h1>
+            <p>Quality Manufacturing Solutions for Modern Nigerian Businesses</p>
+            <p>Welcome to MY Online Store - Your Trusted Manufacturing Partner in Nigeria. We deliver precision-engineered products and innovative manufacturing solutions that power businesses across Lagos and beyond. From concept to completion, we transform your ideas into reality with world-class quality standards.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <img src="https://images.pexels.com/photos/12555018/pexels-photo-12555018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="MY Online Store Team" class="about-image">
+                <div class="about-text">
+                    <p>MY Online Store is a leading manufacturing company based in Ikorodu, Lagos, committed to delivering exceptional products and services to businesses throughout Nigeria. With our state-of-the-art facility at Plot C Block 125, Itele NLA Maya, Ikorodu, we combine traditional craftsmanship with modern manufacturing techniques to produce goods that meet international quality standards. Our team of skilled professionals works tirelessly to ensure every product leaving our facility represents the pinnacle of Nigerian manufacturing excellence. We pride ourselves on timely delivery, competitive pricing, and unwavering commitment to customer satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Custom Manufacturing Solutions</h3>
+                    <p>We specialize in producing custom-manufactured goods tailored to your exact specifications, ensuring your business gets precisely what it needs.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Product Design & Prototyping</h3>
+                    <p>Our experienced design team works with you from initial concept through prototyping, refining your vision into manufacturable reality.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Quality Assurance & Testing</h3>
+                    <p>Every product undergoes rigorous quality control measures to ensure it meets both Nigerian and international standards.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Bulk Production</h3>
+                    <p>Whether you need 100 units or 100,000, our scalable production capabilities can handle orders of any size efficiently.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Logistics & Distribution</h3>
+                    <p>We coordinate seamless delivery across Lagos and Nigeria, ensuring your products arrive on time and in perfect condition.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Consultation Services</h3>
+                    <p>Our manufacturing experts provide valuable insights to optimize your product design for cost-effective production.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process">
+        <div class="container">
+            <h2>Our Manufacturing Process</h2>
+            <div class="process-cards">
+                <div class="process-card">
+                    <h3>Step 1: Consultation</h3>
+                    <p>We begin by understanding your requirements, specifications, and business objectives through detailed discussions.</p>
+                </div>
+                <div class="process-card">
+                    <h3>Step 2: Design & Planning</h3>
+                    <p>Our team creates detailed technical drawings and production plans, ensuring manufacturability and cost-efficiency.</p>
+                </div>
+                <div class="process-card">
+                    <h3>Step 3: Prototyping</h3>
+                    <p>We produce initial samples for your approval, making refinements until you're completely satisfied.</p>
+                </div>
+                <div class="process-card">
+                    <h3>Step 4: Production</h3>
+                    <p>Using advanced machinery and skilled craftsmen, we manufacture your products to exact specifications.</p>
+                </div>
+                <div class="process-card">
+                    <h3>Step 5: Quality Control</h3>
+                    <p>Each item undergoes comprehensive testing and inspection before leaving our facility.</p>
+                </div>
+                <div class="process-card">
+                    <h3>Step 6: Delivery</h3>
+                    <p>We coordinate prompt delivery to your location anywhere in Nigeria, with full tracking and support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us">
+        <div class="container">
+            <h2>Why Choose MY Online Store</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3>Nigerian Excellence</h3>
+                    <p>As a proudly Nigerian company, we understand the unique needs of local businesses and deliver solutions that work in our market.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Proven Track Record</h3>
+                    <p>Years of successful partnerships with businesses across Lagos and Nigeria speak to our reliability and quality.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Competitive Pricing</h3>
+                    <p>We offer exceptional value without compromising on quality, helping your business maximize profitability.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Modern Facilities</h3>
+                    <p>Our Ikorodu facility features contemporary manufacturing equipment that ensures precision and efficiency.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Expert Team</h3>
+                    <p>Our skilled workforce brings decades of combined experience in manufacturing excellence.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Customer-First Approach</h3>
+                    <p>Your success is our success. We go above and beyond to ensure your complete satisfaction with every project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Contact Us</h2>
+                <p>Ready to start your next manufacturing project? Get in touch with MY Online Store today. Whether you have a detailed specification or just an idea, our team is ready to help bring your vision to life.</p>
+                <p>Visit our facility at Plot C Block 125, Itele NLA Maya, Ikorodu, Lagos, Nigeria, or reach out by phone or WhatsApp. We respond promptly to all inquiries and look forward to partnering with your business.</p>
+                <p>Let's build something exceptional together.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>Phone:</strong> <a href="tel:+2348033956759">+234 803 395 6759</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Email:</strong> <a href="mailto:info@myonlinestore.ng">info@myonlinestore.ng</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Address:</strong> <span>Plot C Block 125, Itele NLA Maya, Ikorodu, Lagos, Nigeria</span>
+                    </div>
+                </div>
+                <a href="https://wa.me/2348033956759" class="whatsapp-button" target="_blank">Chat on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/2348033956759" class="whatsapp-float" target="_blank"></a>
+
+    <footer>
+        <p>&copy; 2024 MY Online Store. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenuBtn.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenuBtn.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                });
+            });
+        }
+    </script>
+</body>
+</html>
