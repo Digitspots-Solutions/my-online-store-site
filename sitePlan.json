@@ -1,0 +1,56 @@
+{
+  "businessName": "MY Online Store",
+  "industry": "Manufacturing",
+  "tone": "professional and confident",
+  "tagline": "Quality Manufacturing Solutions for Modern Nigerian Businesses",
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "copy": "Welcome to MY Online Store - Your Trusted Manufacturing Partner in Nigeria. We deliver precision-engineered products and innovative manufacturing solutions that power businesses across Lagos and beyond. From concept to completion, we transform your ideas into reality with world-class quality standards.",
+      "imagePrompt": "Modern Nigerian manufacturing facility with clean industrial workspace, advanced machinery in background, bright natural lighting through large windows, workers in safety gear operating equipment, professional industrial photography, sharp focus, high quality",
+      "layout": "centered"
+    },
+    {
+      "id": "about",
+      "name": "About Us",
+      "copy": "MY Online Store is a leading manufacturing company based in Ikorodu, Lagos, committed to delivering exceptional products and services to businesses throughout Nigeria. With our state-of-the-art facility at Plot C Block 125, Itele NLA Maya, Ikorodu, we combine traditional craftsmanship with modern manufacturing techniques to produce goods that meet international quality standards. Our team of skilled professionals works tirelessly to ensure every product leaving our facility represents the pinnacle of Nigerian manufacturing excellence. We pride ourselves on timely delivery, competitive pricing, and unwavering commitment to customer satisfaction.",
+      "imagePrompt": "Professional team of Nigerian manufacturing workers and engineers standing confidently in clean modern factory, diverse group wearing safety equipment and uniforms, industrial equipment visible in background, warm professional lighting, documentary style photography",
+      "layout": "split"
+    },
+    {
+      "id": "services",
+      "name": "Our Services",
+      "copy": "Custom Manufacturing Solutions - We specialize in producing custom-manufactured goods tailored to your exact specifications, ensuring your business gets precisely what it needs.\n\nProduct Design & Prototyping - Our experienced design team works with you from initial concept through prototyping, refining your vision into manufacturable reality.\n\nQuality Assurance & Testing - Every product undergoes rigorous quality control measures to ensure it meets both Nigerian and international standards.\n\nBulk Production - Whether you need 100 units or 100,000, our scalable production capabilities can handle orders of any size efficiently.\n\nLogistics & Distribution - We coordinate seamless delivery across Lagos and Nigeria, ensuring your products arrive on time and in perfect condition.\n\nConsultation Services - Our manufacturing experts provide valuable insights to optimize your product design for cost-effective production.",
+      "imagePrompt": "Grid layout of Nigerian manufacturing processes, machinery in action, quality control inspection stations, workers assembling products, warehouse logistics operations, clean industrial aesthetic, professional documentation photography, bright even lighting",
+      "layout": "grid"
+    },
+    {
+      "id": "process",
+      "name": "Our Manufacturing Process",
+      "copy": "Step 1: Consultation - We begin by understanding your requirements, specifications, and business objectives through detailed discussions.\n\nStep 2: Design & Planning - Our team creates detailed technical drawings and production plans, ensuring manufacturability and cost-efficiency.\n\nStep 3: Prototyping - We produce initial samples for your approval, making refinements until you're completely satisfied.\n\nStep 4: Production - Using advanced machinery and skilled craftsmen, we manufacture your products to exact specifications.\n\nStep 5: Quality Control - Each item undergoes comprehensive testing and inspection before leaving our facility.\n\nStep 6: Delivery - We coordinate prompt delivery to your location anywhere in Nigeria, with full tracking and support.",
+      "imagePrompt": "Step-by-step visual process flow in Nigerian manufacturing plant, workers at different production stages, quality inspection checkpoint, finished products being packaged, delivery trucks loading, professional industrial documentation, clear sequential photography",
+      "layout": "cards"
+    },
+    {
+      "id": "why-choose-us",
+      "name": "Why Choose MY Online Store",
+      "copy": "Nigerian Excellence - As a proudly Nigerian company, we understand the unique needs of local businesses and deliver solutions that work in our market.\n\nProven Track Record - Years of successful partnerships with businesses across Lagos and Nigeria speak to our reliability and quality.\n\nCompetitive Pricing - We offer exceptional value without compromising on quality, helping your business maximize profitability.\n\nModern Facilities - Our Ikorodu facility features contemporary manufacturing equipment that ensures precision and efficiency.\n\nExpert Team - Our skilled workforce brings decades of combined experience in manufacturing excellence.\n\nCustomer-First Approach - Your success is our success. We go above and beyond to ensure your complete satisfaction with every project.",
+      "imagePrompt": "Modern Nigerian manufacturing facility exterior and interior shots, state-of-the-art machinery, happy satisfied business clients shaking hands with manufacturing team, certificates and awards displayed, professional corporate photography, inspiring and trustworthy atmosphere",
+      "layout": "grid"
+    },
+    {
+      "id": "contact",
+      "name": "Contact Us",
+      "copy": "Ready to start your next manufacturing project? Get in touch with MY Online Store today. Whether you have a detailed specification or just an idea, our team is ready to help bring your vision to life.\n\nVisit our facility at Plot C Block 125, Itele NLA Maya, Ikorodu, Lagos, Nigeria, or reach out by phone or WhatsApp. We respond promptly to all inquiries and look forward to partnering with your business.\n\nLet's build something exceptional together.",
+      "imagePrompt": "Professional Nigerian business office reception area, welcoming front desk, comfortable meeting space, modern interior design, large windows with natural light, Lagos cityscape visible, professional corporate photography, inviting and accessible atmosphere",
+      "layout": "centered"
+    }
+  ],
+  "contact": {
+    "phone": "+234 803 395 6759",
+    "email": "info@myonlinestore.ng",
+    "address": "Plot C Block 125, Itele NLA Maya, Ikorodu, Lagos, Nigeria",
+    "whatsapp": "https://wa.me/2348033956759"
+  }
+}
