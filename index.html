@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY Online Store - Quality Manufacturing Solutions for Modern Nigerian Businesses</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Figtree:wght@300;400;500&display=swap">
+    <title>Aallie Cooperative Tech Limited - Digitizing Cooperative Savings for Modern Nigeria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Figtree:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         :root {
-            --color-primary: #06060e;
-            --color-accent: #f24900;
-            --color-bg: #F6F6F6;
-            --color-text: #080A14;
-            --color-surface: #0e111a;
-            --color-secondary-accent: #05ae4c;
-            --font-display: 'Outfit', sans-serif;
+            --primary-color: #0a1d45;
+            --accent-color: #1a63ca;
+            --bg-color: #F2F6FC;
+            --text-color: #081A40;
+            --surface-color: #111c5f;
+            --secondary-accent: #24995c;
+            --font-display: 'Plus Jakarta Sans', sans-serif;
             --font-body: 'Figtree', sans-serif;
-            --border-radius: 8px;
+            --border-radius: 16px;
         }
 
         * {
@@ -30,14 +32,14 @@
 
         body {
             font-family: var(--font-body);
-            color: var(--color-text);
-            background-color: var(--color-bg);
-            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            line-height: 1.7;
         }
 
         h1, h2, h3, h4, h5, h6 {
             font-family: var(--font-display);
-            font-weight: 600;
+            font-weight: 700;
             line-height: 1.2;
         }
 
@@ -52,21 +54,20 @@
             }
         }
 
-        /* Navigation */
         nav {
             position: sticky;
             top: 0;
-            background: rgba(246, 246, 246, 0.95);
+            background: rgba(242, 246, 252, 0.95);
             backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
             z-index: 1000;
-            padding: 1rem 5%;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(10, 29, 69, 0.08);
         }
 
-        nav .nav-container {
-            max-width: 1400px;
+        nav .container {
+            max-width: 1200px;
             margin: 0 auto;
+            padding: 0 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -76,39 +77,38 @@
             font-family: var(--font-display);
             font-size: 1.5rem;
             font-weight: 700;
-            color: var(--color-primary);
+            color: var(--primary-color);
+            text-decoration: none;
         }
 
-        nav .nav-links {
+        nav ul {
             display: flex;
             list-style: none;
             gap: 2rem;
         }
 
-        nav .nav-links a {
+        nav ul a {
             text-decoration: none;
-            color: var(--color-text);
+            color: var(--text-color);
             font-weight: 500;
             transition: color 0.3s ease;
         }
 
-        nav .nav-links a:hover {
-            color: var(--color-accent);
+        nav ul a:hover {
+            color: var(--accent-color);
         }
 
-        /* Mobile Menu Button */
         .mobile-menu-btn {
             display: none;
             flex-direction: column;
             cursor: pointer;
             gap: 4px;
-            z-index: 1001;
         }
 
         .mobile-menu-btn span {
             width: 25px;
             height: 3px;
-            background: var(--color-text);
+            background: var(--text-color);
             transition: all 0.3s ease;
             transform-origin: center;
         }
@@ -125,14 +125,13 @@
             transform: rotate(-45deg) translate(6px, -6px);
         }
 
-        /* Mobile Menu */
         .mobile-menu {
             position: fixed;
             top: 70px;
             right: -100%;
             width: 300px;
             height: calc(100vh - 70px);
-            background: var(--color-bg);
+            background: var(--bg-color);
             box-shadow: -2px 0 10px rgba(0,0,0,0.1);
             transition: right 0.3s ease;
             z-index: 999;
@@ -145,6 +144,8 @@
 
         .mobile-menu ul {
             list-style: none;
+            flex-direction: column;
+            gap: 0;
         }
 
         .mobile-menu ul li {
@@ -153,7 +154,7 @@
 
         .mobile-menu ul a {
             text-decoration: none;
-            color: var(--color-text);
+            color: var(--text-color);
             font-size: 1.1rem;
             font-weight: 500;
             transition: color 0.3s ease;
@@ -162,86 +163,11 @@
         }
 
         .mobile-menu ul a:hover {
-            color: var(--color-accent);
+            color: var(--accent-color);
         }
 
-        /* Hero Section */
-        #hero {
-            position: relative;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            overflow: hidden;
-            animation: fadeUp 0.6s ease forwards;
-        }
-
-        #hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('https://images.pexels.com/photos/36823725/pexels-photo-36823725.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-            background-size: cover;
-            background-position: center;
-            z-index: 1;
-        }
-
-        #hero::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.55);
-            z-index: 2;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 3;
-            max-width: 900px;
-            padding: 0 5%;
-        }
-
-        .hero-content h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-            font-weight: 700;
-        }
-
-        .hero-content p {
-            font-size: 1.25rem;
-            margin-bottom: 2rem;
-            line-height: 1.8;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 1rem 2.5rem;
-            background: var(--color-accent);
-            color: white;
-            text-decoration: none;
-            border-radius: var(--border-radius);
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 4px 15px rgba(242, 73, 0, 0.3);
-        }
-
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(242, 73, 0, 0.4);
-        }
-
-        /* Section Styles */
         section {
-            padding: 80px 5%;
+            padding: 80px 2rem;
             animation: fadeUp 0.6s ease forwards;
         }
 
@@ -250,333 +176,448 @@
         section:nth-child(4) { animation-delay: 0.3s; }
         section:nth-child(5) { animation-delay: 0.4s; }
         section:nth-child(6) { animation-delay: 0.5s; }
+        section:nth-child(7) { animation-delay: 0.6s; }
 
         .container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
-        section h2 {
-            font-size: 2.5rem;
+        #hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+            padding: 80px 2rem;
+        }
+
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://images.pexels.com/photos/9301157/pexels-photo-9301157.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+            background-size: cover;
+            background-position: center;
+            z-index: -2;
+        }
+
+        #hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.55);
+            z-index: -1;
+        }
+
+        #hero h1 {
+            font-size: 3.5rem;
             margin-bottom: 1rem;
-            color: var(--color-primary);
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
         }
 
-        section h3 {
+        #hero .tagline {
             font-size: 1.8rem;
-            margin-bottom: 0.8rem;
-            color: var(--color-primary);
+            margin-bottom: 1rem;
+            font-weight: 500;
         }
 
-        /* About Section */
+        #hero p {
+            font-size: 1.15rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            line-height: 1.8;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-family: var(--font-display);
+            box-shadow: 0 4px 12px rgba(10, 29, 69, 0.15);
+        }
+
+        .btn-primary {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1557b8;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(26, 99, 202, 0.3);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--primary-color);
+        }
+
+        .btn-secondary:hover {
+            background: var(--bg-color);
+            transform: translateY(-2px);
+        }
+
         #about {
             background: white;
         }
 
-        .about-content {
+        .split-layout {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 3rem;
+            gap: 4rem;
             align-items: center;
         }
 
-        .about-image {
+        .split-layout img {
             width: 100%;
             height: 500px;
             object-fit: cover;
             border-radius: var(--border-radius);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            box-shadow: 0 8px 24px rgba(10, 29, 69, 0.12);
         }
 
-        .about-text p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: var(--color-text);
+        #about h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
         }
 
-        /* Services Section */
+        #about h3 {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        #about ul {
+            margin-top: 1rem;
+            padding-left: 1.5rem;
+        }
+
+        #about li {
+            margin-bottom: 0.8rem;
+            line-height: 1.7;
+        }
+
         #services {
-            background: var(--color-bg);
+            background: var(--bg-color);
+        }
+
+        #services h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 3rem;
         }
 
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
-            margin-top: 3rem;
+            margin-top: 2rem;
         }
 
         .service-card {
             background: white;
             padding: 2rem;
             border-radius: var(--border-radius);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 8px rgba(10, 29, 69, 0.08), 0 0 0 1px rgba(26, 99, 202, 0.02);
+            transition: all 0.3s ease;
         }
 
         .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(10, 29, 69, 0.12);
         }
 
         .service-card h3 {
-            color: var(--color-accent);
+            font-size: 1.4rem;
+            color: var(--primary-color);
             margin-bottom: 1rem;
-            font-size: 1.5rem;
         }
 
         .service-card p {
-            font-size: 1rem;
+            color: var(--text-color);
             line-height: 1.7;
         }
 
-        /* Process Section */
-        #process {
+        #team {
             background: white;
         }
 
-        .process-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .process-card {
-            background: var(--color-bg);
-            padding: 2rem;
-            border-radius: var(--border-radius);
-            border-left: 4px solid var(--color-accent);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-
-        .process-card h3 {
-            color: var(--color-primary);
-            margin-bottom: 1rem;
-            font-size: 1.4rem;
-        }
-
-        .process-card p {
-            font-size: 1rem;
-            line-height: 1.7;
-        }
-
-        /* Why Choose Us Section */
-        #why-choose-us {
-            background: var(--color-surface);
-            color: white;
-        }
-
-        #why-choose-us h2 {
-            color: white;
-        }
-
-        .why-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .why-card {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 2rem;
-            border-radius: var(--border-radius);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .why-card h3 {
-            color: var(--color-accent);
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-
-        .why-card p {
-            font-size: 1rem;
-            line-height: 1.7;
-            color: rgba(255, 255, 255, 0.9);
-        }
-
-        /* Contact Section */
-        #contact {
-            background: white;
+        #team h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
             text-align: center;
-        }
-
-        .contact-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .contact-content p {
-            font-size: 1.15rem;
-            line-height: 1.8;
             margin-bottom: 2rem;
         }
 
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            margin-top: 3rem;
+        .team-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
         }
 
-        .contact-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
+        .team-content img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 2rem auto;
+            display: block;
+            box-shadow: 0 8px 24px rgba(10, 29, 69, 0.15);
+        }
+
+        .team-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
             font-size: 1.1rem;
         }
 
-        .contact-item a {
-            color: var(--color-accent);
+        #contact {
+            background: var(--bg-color);
+        }
+
+        #contact h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        #contact h3 {
+            font-size: 1.8rem;
+            color: var(--accent-color);
+            margin-bottom: 2rem;
+        }
+
+        .contact-split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-split img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            box-shadow: 0 8px 24px rgba(10, 29, 69, 0.12);
+        }
+
+        .contact-info h4 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.8rem;
+            line-height: 1.7;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
             text-decoration: none;
             font-weight: 500;
-            transition: color 0.3s ease;
         }
 
-        .contact-item a:hover {
-            color: var(--color-primary);
+        .contact-info a:hover {
+            text-decoration: underline;
         }
 
-        .whatsapp-button {
-            display: inline-block;
-            padding: 1rem 2.5rem;
-            background: #25D366;
-            color: white;
-            text-decoration: none;
+        #faq {
+            background: white;
+        }
+
+        #faq h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--bg-color);
             border-radius: var(--border-radius);
-            font-weight: 600;
-            font-size: 1.1rem;
-            margin-top: 2rem;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            box-shadow: 0 2px 8px rgba(10, 29, 69, 0.06);
         }
 
-        .whatsapp-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        .faq-item h3 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-bottom: 0.8rem;
         }
 
-        /* WhatsApp Floating Button */
+        .faq-item p {
+            line-height: 1.7;
+            color: var(--text-color);
+        }
+
         .whatsapp-float {
             position: fixed;
             bottom: 30px;
             right: 30px;
+            background: #25D366;
+            color: white;
             width: 60px;
             height: 60px;
-            background: #25D366;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            z-index: 1000;
-            transition: transform 0.3s ease;
             text-decoration: none;
+            font-size: 2rem;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+            z-index: 999;
+            transition: all 0.3s ease;
         }
 
         .whatsapp-float:hover {
             transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
         }
 
-        .whatsapp-float::before {
-            content: '💬';
-            font-size: 30px;
-        }
-
-        /* Footer */
         footer {
-            background: var(--color-primary);
+            background: var(--primary-color);
             color: white;
             text-align: center;
-            padding: 2rem 5%;
+            padding: 2rem;
         }
 
         footer p {
-            font-size: 1rem;
-        }
-
-        /* Responsive */
-        @media (max-width: 1024px) {
-            section {
-                padding: 60px 5%;
-            }
-
-            .hero-content h1 {
-                font-size: 2.5rem;
-            }
-
-            section h2 {
-                font-size: 2rem;
-            }
+            margin: 0;
+            font-size: 0.95rem;
         }
 
         @media (max-width: 768px) {
-            nav .nav-links {
+            .nav-links {
                 display: none;
             }
-            
+
             .mobile-menu-btn {
                 display: flex;
             }
 
             section {
-                padding: 48px 5%;
+                padding: 48px 1.5rem;
             }
 
-            .hero-content h1 {
-                font-size: 2rem;
+            #hero h1 {
+                font-size: 2.2rem;
             }
 
-            .hero-content p {
-                font-size: 1.1rem;
+            #hero .tagline {
+                font-size: 1.3rem;
             }
 
-            .about-content {
+            #hero p {
+                font-size: 1rem;
+            }
+
+            .split-layout,
+            .contact-split {
                 grid-template-columns: 1fr;
+                gap: 2rem;
             }
 
-            .about-image {
+            .split-layout img,
+            .contact-split img {
                 height: 350px;
             }
 
-            section h2 {
-                font-size: 1.8rem;
+            #about h2,
+            #services h2,
+            #team h2,
+            #contact h2,
+            #faq h2 {
+                font-size: 2rem;
             }
 
-            .services-grid,
-            .process-cards,
-            .why-grid {
+            .services-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .cta-group {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .team-content img {
+                width: 200px;
+                height: 200px;
             }
 
             .whatsapp-float {
                 width: 50px;
                 height: 50px;
+                font-size: 1.6rem;
                 bottom: 20px;
                 right: 20px;
             }
+        }
 
-            .whatsapp-float::before {
-                font-size: 24px;
+        @media (max-width: 480px) {
+            nav .logo {
+                font-size: 1.2rem;
+            }
+
+            #hero h1 {
+                font-size: 1.8rem;
+            }
+
+            #hero .tagline {
+                font-size: 1.1rem;
+            }
+
+            .mobile-menu {
+                width: 100%;
             }
         }
     </style>
 </head>
 <body>
     <nav>
-        <div class="nav-container">
-            <div class="logo">MY Online Store</div>
+        <div class="container">
+            <a href="#hero" class="logo">Aallie</a>
             <ul class="nav-links">
-                <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#process">Process</a></li>
-                <li><a href="#why-choose-us">Why Us</a></li>
+                <li><a href="#team">Leadership</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#faq">FAQ</a></li>
             </ul>
             <div class="mobile-menu-btn">
                 <span></span>
@@ -588,31 +629,44 @@
 
     <div class="mobile-menu">
         <ul>
-            <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#process">Process</a></li>
-            <li><a href="#why-choose-us">Why Us</a></li>
+            <li><a href="#team">Leadership</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#faq">FAQ</a></li>
         </ul>
     </div>
 
     <section id="hero">
-        <div class="hero-content">
-            <h1>MY Online Store</h1>
-            <p>Quality Manufacturing Solutions for Modern Nigerian Businesses</p>
-            <p>Welcome to MY Online Store - Your Trusted Manufacturing Partner in Nigeria. We deliver precision-engineered products and innovative manufacturing solutions that power businesses across Lagos and beyond. From concept to completion, we transform your ideas into reality with world-class quality standards.</p>
-            <a href="#contact" class="cta-button">Get Started</a>
+        <div class="container">
+            <h1>Welcome to Aallie Esusu Digital Co</h1>
+            <p class="tagline">Modernizing Traditional Savings with Technology</p>
+            <p>Aallie Cooperative Tech Limited brings the trusted Nigerian esusu tradition into the digital age. We provide secure, transparent, and accessible cooperative savings solutions that empower individuals and groups to achieve their financial goals together.</p>
+            <div class="cta-group">
+                <a href="#contact" class="btn btn-primary">Get Started Today</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
         </div>
     </section>
 
     <section id="about">
         <div class="container">
-            <h2>About Us</h2>
-            <div class="about-content">
-                <img src="https://images.pexels.com/photos/12555018/pexels-photo-12555018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="MY Online Store Team" class="about-image">
-                <div class="about-text">
-                    <p>MY Online Store is a leading manufacturing company based in Ikorodu, Lagos, committed to delivering exceptional products and services to businesses throughout Nigeria. With our state-of-the-art facility at Plot C Block 125, Itele NLA Maya, Ikorodu, we combine traditional craftsmanship with modern manufacturing techniques to produce goods that meet international quality standards. Our team of skilled professionals works tirelessly to ensure every product leaving our facility represents the pinnacle of Nigerian manufacturing excellence. We pride ourselves on timely delivery, competitive pricing, and unwavering commitment to customer satisfaction.</p>
+            <div class="split-layout">
+                <img src="https://images.pexels.com/photos/9491008/pexels-photo-9491008.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="About Aallie Cooperative Tech Limited">
+                <div>
+                    <h2>About Aallie Cooperative Tech Limited</h2>
+                    <h3>Who We Are</h3>
+                    <p>Aallie Cooperative Tech Limited (also known as Aallie Esusu Digital Co) is a Nigerian fintech company dedicated to transforming how Nigerians save and invest through cooperative systems. Based in Ikorodu, Lagos, we leverage cutting-edge treasury technology to bring transparency, security, and convenience to traditional esusu and cooperative savings models.</p>
+                    <h3>Our Mission</h3>
+                    <p>We exist to democratize access to structured savings and investment opportunities by digitizing trusted community-based financial practices. Through our platform, we make it easier for individuals, groups, and cooperatives to manage contributions, track savings, and achieve collective financial success.</p>
+                    <h3>Why Choose Aallie?</h3>
+                    <ul>
+                        <li>Built by Nigerians for Nigerians - We understand local savings culture</li>
+                        <li>Treasury-grade security - Led by experienced treasury technology professionals</li>
+                        <li>Transparent operations - Real-time tracking of all contributions and disbursements</li>
+                        <li>Mobile-first design - Save and manage funds from anywhere</li>
+                        <li>Community-focused - Strengthening the cooperative tradition with modern tools</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -620,149 +674,128 @@
 
     <section id="services">
         <div class="container">
-            <h2>Our Services</h2>
+            <h2>Our Digital Cooperative Solutions</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Custom Manufacturing Solutions</h3>
-                    <p>We specialize in producing custom-manufactured goods tailored to your exact specifications, ensuring your business gets precisely what it needs.</p>
+                    <h3>Digital Esusu Management</h3>
+                    <p>Streamline your traditional esusu contributions with automated tracking, scheduled payments, and transparent record-keeping. Members can join, contribute, and receive their payouts digitally with complete accountability.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Product Design & Prototyping</h3>
-                    <p>Our experienced design team works with you from initial concept through prototyping, refining your vision into manufacturable reality.</p>
+                    <h3>Cooperative Savings Platform</h3>
+                    <p>Manage cooperative societies with ease. Our platform handles member registration, contribution tracking, loan management, and financial reporting—all from one secure dashboard.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Quality Assurance & Testing</h3>
-                    <p>Every product undergoes rigorous quality control measures to ensure it meets both Nigerian and international standards.</p>
+                    <h3>Group Investment Pools</h3>
+                    <p>Create and manage investment groups where members pool resources toward common financial goals. Perfect for thrift societies, investment clubs, and community development associations.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Bulk Production</h3>
-                    <p>Whether you need 100 units or 100,000, our scalable production capabilities can handle orders of any size efficiently.</p>
+                    <h3>Treasury Management Solutions</h3>
+                    <p>Professional-grade treasury tools for cooperative administrators. Monitor cash flows, generate compliance reports, and maintain accurate financial records with institutional-level security.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Logistics & Distribution</h3>
-                    <p>We coordinate seamless delivery across Lagos and Nigeria, ensuring your products arrive on time and in perfect condition.</p>
+                    <h3>Mobile Money Integration</h3>
+                    <p>Seamless integration with all major Nigerian payment platforms. Members can contribute via bank transfer, card payments, or mobile money—making participation convenient for everyone.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Consultation Services</h3>
-                    <p>Our manufacturing experts provide valuable insights to optimize your product design for cost-effective production.</p>
+                    <h3>Financial Literacy Programs</h3>
+                    <p>We provide training and resources to help cooperative members make informed financial decisions and maximize the benefits of collective savings.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="process">
+    <section id="team">
         <div class="container">
-            <h2>Our Manufacturing Process</h2>
-            <div class="process-cards">
-                <div class="process-card">
-                    <h3>Step 1: Consultation</h3>
-                    <p>We begin by understanding your requirements, specifications, and business objectives through detailed discussions.</p>
-                </div>
-                <div class="process-card">
-                    <h3>Step 2: Design & Planning</h3>
-                    <p>Our team creates detailed technical drawings and production plans, ensuring manufacturability and cost-efficiency.</p>
-                </div>
-                <div class="process-card">
-                    <h3>Step 3: Prototyping</h3>
-                    <p>We produce initial samples for your approval, making refinements until you're completely satisfied.</p>
-                </div>
-                <div class="process-card">
-                    <h3>Step 4: Production</h3>
-                    <p>Using advanced machinery and skilled craftsmen, we manufacture your products to exact specifications.</p>
-                </div>
-                <div class="process-card">
-                    <h3>Step 5: Quality Control</h3>
-                    <p>Each item undergoes comprehensive testing and inspection before leaving our facility.</p>
-                </div>
-                <div class="process-card">
-                    <h3>Step 6: Delivery</h3>
-                    <p>We coordinate prompt delivery to your location anywhere in Nigeria, with full tracking and support.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="why-choose-us">
-        <div class="container">
-            <h2>Why Choose MY Online Store</h2>
-            <div class="why-grid">
-                <div class="why-card">
-                    <h3>Nigerian Excellence</h3>
-                    <p>As a proudly Nigerian company, we understand the unique needs of local businesses and deliver solutions that work in our market.</p>
-                </div>
-                <div class="why-card">
-                    <h3>Proven Track Record</h3>
-                    <p>Years of successful partnerships with businesses across Lagos and Nigeria speak to our reliability and quality.</p>
-                </div>
-                <div class="why-card">
-                    <h3>Competitive Pricing</h3>
-                    <p>We offer exceptional value without compromising on quality, helping your business maximize profitability.</p>
-                </div>
-                <div class="why-card">
-                    <h3>Modern Facilities</h3>
-                    <p>Our Ikorodu facility features contemporary manufacturing equipment that ensures precision and efficiency.</p>
-                </div>
-                <div class="why-card">
-                    <h3>Expert Team</h3>
-                    <p>Our skilled workforce brings decades of combined experience in manufacturing excellence.</p>
-                </div>
-                <div class="why-card">
-                    <h3>Customer-First Approach</h3>
-                    <p>Your success is our success. We go above and beyond to ensure your complete satisfaction with every project.</p>
-                </div>
+            <h2>Meet Our Leadership Team</h2>
+            <div class="team-content">
+                <img src="https://images.pexels.com/photos/36766002/pexels-photo-36766002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Aallie Leadership Team">
+                <p>Aallie Cooperative Tech Limited is led by experienced professionals with deep expertise in treasury management, financial technology, and cooperative finance systems. Our team combines technical excellence with intimate knowledge of Nigerian savings culture to deliver solutions that truly work for our communities.</p>
+                <p>Our founder serves as Treasury Tech Lead, bringing years of experience in managing complex financial systems and ensuring the security and reliability of our platform. This expertise guarantees that your cooperative funds are managed with institutional-grade professionalism while remaining accessible to everyday Nigerians.</p>
+                <p>We are committed to building a fintech ecosystem that honors traditional Nigerian financial wisdom while embracing the possibilities of modern technology.</p>
             </div>
         </div>
     </section>
 
     <section id="contact">
         <div class="container">
-            <div class="contact-content">
-                <h2>Contact Us</h2>
-                <p>Ready to start your next manufacturing project? Get in touch with MY Online Store today. Whether you have a detailed specification or just an idea, our team is ready to help bring your vision to life.</p>
-                <p>Visit our facility at Plot C Block 125, Itele NLA Maya, Ikorodu, Lagos, Nigeria, or reach out by phone or WhatsApp. We respond promptly to all inquiries and look forward to partnering with your business.</p>
-                <p>Let's build something exceptional together.</p>
+            <h2>Get In Touch With Aallie</h2>
+            <h3>Ready to Transform Your Cooperative Savings?</h3>
+            <div class="contact-split">
+                <img src="https://images.pexels.com/photos/36700339/pexels-photo-36700339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Contact Aallie">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <strong>Phone:</strong> <a href="tel:+2348033956759">+234 803 395 6759</a>
-                    </div>
-                    <div class="contact-item">
-                        <strong>Email:</strong> <a href="mailto:info@myonlinestore.ng">info@myonlinestore.ng</a>
-                    </div>
-                    <div class="contact-item">
-                        <strong>Address:</strong> <span>Plot C Block 125, Itele NLA Maya, Ikorodu, Lagos, Nigeria</span>
+                    <p>Whether you're starting a new esusu group, managing an existing cooperative, or exploring digital savings solutions, we're here to help. Contact us today to learn how Aallie can serve your financial community.</p>
+                    <h4>Visit Our Office</h4>
+                    <p>Plot C Block 125 Itele NLA Maya, Ikorodu, Lagos State, Nigeria</p>
+                    <h4>Call or WhatsApp</h4>
+                    <p><a href="tel:+2348033956759">+234 803 395 6759</a></p>
+                    <h4>Online</h4>
+                    <p><a href="https://www.aallie.org" target="_blank">www.aallie.org</a></p>
+                    <h4>Business Hours</h4>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM<br>
+                    Saturday: 10:00 AM - 2:00 PM<br>
+                    Sunday: Closed</p>
+                    <h4>Schedule a Demo</h4>
+                    <p>Interested in seeing our platform in action? Request a personalized demonstration for your cooperative or savings group. Click below to schedule a convenient time.</p>
+                    <div class="cta-group" style="justify-content: flex-start; margin-top: 1.5rem;">
+                        <a href="https://wa.me/2348033956759" class="btn btn-primary">Send WhatsApp Message</a>
                     </div>
                 </div>
-                <a href="https://wa.me/2348033956759" class="whatsapp-button" target="_blank">Chat on WhatsApp</a>
             </div>
         </div>
     </section>
 
-    <a href="https://wa.me/2348033956759" class="whatsapp-float" target="_blank"></a>
+    <section id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3>What is Aallie Cooperative Tech Limited?</h3>
+                    <p>Aallie (also known as Aallie Esusu Digital Co) is a Nigerian fintech platform that digitizes traditional cooperative savings systems like esusu. We provide secure, transparent tools for managing group savings, contributions, and disbursements.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How does digital esusu work?</h3>
+                    <p>Members register on our platform, agree on contribution amounts and schedules, then make regular digital payments. The system automatically tracks all contributions and manages payout rotations with complete transparency. Every transaction is recorded and accessible to authorized members.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is my money safe with Aallie?</h3>
+                    <p>Absolutely. We employ treasury-grade security measures and comply with Nigerian financial regulations. Our platform is led by experienced treasury technology professionals who prioritize the security of your funds. All transactions are encrypted and monitored.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What types of groups can use Aallie?</h3>
+                    <p>Any savings group can benefit: traditional esusu circles, cooperative societies, thrift collectors, investment clubs, community development associations, workplace savings groups, and family savings pools.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How much does it cost?</h3>
+                    <p>We offer flexible pricing based on group size and features needed. Contact us for a customized quote. We believe in transparent pricing with no hidden fees.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do I need special technical skills?</h3>
+                    <p>No. Our platform is designed to be user-friendly for everyone. If you can use WhatsApp or mobile banking, you can use Aallie. We also provide training and ongoing support.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do members make contributions?</h3>
+                    <p>Members can contribute via bank transfer, debit card, or mobile money. We integrate with all major Nigerian payment platforms for maximum convenience.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can we customize the platform for our cooperative?</h3>
+                    <p>Yes. We work with each group to configure contribution schedules, payout rules, and administrative controls to match your specific needs and bylaws.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What happens if a member misses a contribution?</h3>
+                    <p>The system sends automatic reminders before due dates. Groups can set their own policies for late payments. Our platform helps maintain accountability while allowing for flexibility when needed.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do we get started?</h3>
+                    <p>Simply contact us via phone or WhatsApp at +234 803 395 6759. We'll schedule a consultation to understand your needs and provide a demonstration of the platform tailored to your cooperative.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2024 MY Online Store. All rights reserved.</p>
+        <p>&copy; 2024 Aallie Cooperative Tech Limited. All rights reserved.</p>
     </footer>
 
-    <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const mobileMenu = document.querySelector('.mobile-menu');
-
-        if (mobileMenuBtn && mobileMenu) {
-            mobileMenuBtn.addEventListener('click', () => {
-                mobileMenuBtn.classList.toggle('active');
-                mobileMenu.classList.toggle('active');
-            });
-
-            // Close mobile menu when clicking a link
-            const mobileLinks = mobileMenu.querySelectorAll('a');
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenuBtn.classList.remove('active');
-                    mobileMenu.classList.remove('active');
-                });
-            });
-        }
-    </script>
-</body>
-</html>
+    <a href="https://wa.me/2348033956759" class="whatsapp-float" target="_blank" aria-label="Contact us on WhatsApp">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 0C7.164 0 0 7.164 0 16c0 2.832.744 5.484 2.044 7.784L0 32l8.428-2.02A15.916 15.916 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.2c-2.58 0-5.028-.732-7.084-2L6.4 28.4l1.236-2.568A13.144 13.144 0 012.8 16C2.8 8.708 8.708 2.8 16 2.8S29.2 8.708 29.2 16
