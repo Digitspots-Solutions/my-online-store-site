@@ -1,56 +1,56 @@
 {
-  "businessName": "MY Online Store",
-  "industry": "Manufacturing",
-  "tone": "professional and confident",
-  "tagline": "Quality Manufacturing Solutions for Modern Nigerian Businesses",
+  "businessName": "Aallie Cooperative Tech Limited",
+  "industry": "Financial Technology (Fintech)",
+  "tone": "professional, trustworthy, innovative",
+  "tagline": "Digitizing cooperative savings for modern Nigeria",
   "sections": [
     {
       "id": "hero",
-      "name": "Hero",
-      "copy": "Welcome to MY Online Store - Your Trusted Manufacturing Partner in Nigeria. We deliver precision-engineered products and innovative manufacturing solutions that power businesses across Lagos and beyond. From concept to completion, we transform your ideas into reality with world-class quality standards.",
-      "imagePrompt": "Modern Nigerian manufacturing facility with clean industrial workspace, advanced machinery in background, bright natural lighting through large windows, workers in safety gear operating equipment, professional industrial photography, sharp focus, high quality",
+      "name": "Hero Section",
+      "copy": "Welcome to Aallie Esusu Digital Co\n\nModernizing Traditional Savings with Technology\n\nAallie Cooperative Tech Limited brings the trusted Nigerian esusu tradition into the digital age. We provide secure, transparent, and accessible cooperative savings solutions that empower individuals and groups to achieve their financial goals together.\n\nGet Started Today | Learn More",
+      "imagePrompt": "Professional Nigerian fintech office environment, modern glass building in Lagos or Ikorodu area, diverse group of young Nigerian professionals collaborating around digital screens showing financial dashboards, warm natural lighting, blue and green accent colors suggesting trust and growth, photorealistic, high-end corporate photography style",
       "layout": "centered"
     },
     {
       "id": "about",
       "name": "About Us",
-      "copy": "MY Online Store is a leading manufacturing company based in Ikorodu, Lagos, committed to delivering exceptional products and services to businesses throughout Nigeria. With our state-of-the-art facility at Plot C Block 125, Itele NLA Maya, Ikorodu, we combine traditional craftsmanship with modern manufacturing techniques to produce goods that meet international quality standards. Our team of skilled professionals works tirelessly to ensure every product leaving our facility represents the pinnacle of Nigerian manufacturing excellence. We pride ourselves on timely delivery, competitive pricing, and unwavering commitment to customer satisfaction.",
-      "imagePrompt": "Professional team of Nigerian manufacturing workers and engineers standing confidently in clean modern factory, diverse group wearing safety equipment and uniforms, industrial equipment visible in background, warm professional lighting, documentary style photography",
+      "copy": "About Aallie Cooperative Tech Limited\n\nWho We Are\n\nAallie Cooperative Tech Limited (also known as Aallie Esusu Digital Co) is a Nigerian fintech company dedicated to transforming how Nigerians save and invest through cooperative systems. Based in Ikorodu, Lagos, we leverage cutting-edge treasury technology to bring transparency, security, and convenience to traditional esusu and cooperative savings models.\n\nOur Mission\n\nWe exist to democratize access to structured savings and investment opportunities by digitizing trusted community-based financial practices. Through our platform, we make it easier for individuals, groups, and cooperatives to manage contributions, track savings, and achieve collective financial success.\n\nWhy Choose Aallie?\n\n• Built by Nigerians for Nigerians - We understand local savings culture\n• Treasury-grade security - Led by experienced treasury technology professionals\n• Transparent operations - Real-time tracking of all contributions and disbursements\n• Mobile-first design - Save and manage funds from anywhere\n• Community-focused - Strengthening the cooperative tradition with modern tools",
+      "imagePrompt": "Close-up of Nigerian hands of different skin tones joining together in unity over a modern tablet displaying savings dashboard, warm office lighting, wooden conference table, professional yet approachable atmosphere, shallow depth of field, photorealistic business photography",
       "layout": "split"
     },
     {
       "id": "services",
       "name": "Our Services",
-      "copy": "Custom Manufacturing Solutions - We specialize in producing custom-manufactured goods tailored to your exact specifications, ensuring your business gets precisely what it needs.\n\nProduct Design & Prototyping - Our experienced design team works with you from initial concept through prototyping, refining your vision into manufacturable reality.\n\nQuality Assurance & Testing - Every product undergoes rigorous quality control measures to ensure it meets both Nigerian and international standards.\n\nBulk Production - Whether you need 100 units or 100,000, our scalable production capabilities can handle orders of any size efficiently.\n\nLogistics & Distribution - We coordinate seamless delivery across Lagos and Nigeria, ensuring your products arrive on time and in perfect condition.\n\nConsultation Services - Our manufacturing experts provide valuable insights to optimize your product design for cost-effective production.",
-      "imagePrompt": "Grid layout of Nigerian manufacturing processes, machinery in action, quality control inspection stations, workers assembling products, warehouse logistics operations, clean industrial aesthetic, professional documentation photography, bright even lighting",
+      "copy": "Our Digital Cooperative Solutions\n\nDigital Esusu Management\n\nStreamline your traditional esusu contributions with automated tracking, scheduled payments, and transparent record-keeping. Members can join, contribute, and receive their payouts digitally with complete accountability.\n\nCooperative Savings Platform\n\nManage cooperative societies with ease. Our platform handles member registration, contribution tracking, loan management, and financial reporting—all from one secure dashboard.\n\nGroup Investment Pools\n\nCreate and manage investment groups where members pool resources toward common financial goals. Perfect for thrift societies, investment clubs, and community development associations.\n\nTreasury Management Solutions\n\nProfessional-grade treasury tools for cooperative administrators. Monitor cash flows, generate compliance reports, and maintain accurate financial records with institutional-level security.\n\nMobile Money Integration\n\nSeamless integration with all major Nigerian payment platforms. Members can contribute via bank transfer, card payments, or mobile money—making participation convenient for everyone.\n\nFinancial Literacy Programs\n\nWe provide training and resources to help cooperative members make informed financial decisions and maximize the benefits of collective savings.",
+      "imagePrompt": "Modern smartphone displaying a clean fintech app interface with Nigerian Naira currency symbols, colorful charts and savings progress bars, held by professional Nigerian hands, Lagos cityscape blurred in background, bright natural daylight, vibrant blue and green UI colors, product photography style, photorealistic",
       "layout": "grid"
     },
     {
-      "id": "process",
-      "name": "Our Manufacturing Process",
-      "copy": "Step 1: Consultation - We begin by understanding your requirements, specifications, and business objectives through detailed discussions.\n\nStep 2: Design & Planning - Our team creates detailed technical drawings and production plans, ensuring manufacturability and cost-efficiency.\n\nStep 3: Prototyping - We produce initial samples for your approval, making refinements until you're completely satisfied.\n\nStep 4: Production - Using advanced machinery and skilled craftsmen, we manufacture your products to exact specifications.\n\nStep 5: Quality Control - Each item undergoes comprehensive testing and inspection before leaving our facility.\n\nStep 6: Delivery - We coordinate prompt delivery to your location anywhere in Nigeria, with full tracking and support.",
-      "imagePrompt": "Step-by-step visual process flow in Nigerian manufacturing plant, workers at different production stages, quality inspection checkpoint, finished products being packaged, delivery trucks loading, professional industrial documentation, clear sequential photography",
-      "layout": "cards"
-    },
-    {
-      "id": "why-choose-us",
-      "name": "Why Choose MY Online Store",
-      "copy": "Nigerian Excellence - As a proudly Nigerian company, we understand the unique needs of local businesses and deliver solutions that work in our market.\n\nProven Track Record - Years of successful partnerships with businesses across Lagos and Nigeria speak to our reliability and quality.\n\nCompetitive Pricing - We offer exceptional value without compromising on quality, helping your business maximize profitability.\n\nModern Facilities - Our Ikorodu facility features contemporary manufacturing equipment that ensures precision and efficiency.\n\nExpert Team - Our skilled workforce brings decades of combined experience in manufacturing excellence.\n\nCustomer-First Approach - Your success is our success. We go above and beyond to ensure your complete satisfaction with every project.",
-      "imagePrompt": "Modern Nigerian manufacturing facility exterior and interior shots, state-of-the-art machinery, happy satisfied business clients shaking hands with manufacturing team, certificates and awards displayed, professional corporate photography, inspiring and trustworthy atmosphere",
-      "layout": "grid"
+      "id": "team",
+      "name": "Leadership",
+      "copy": "Meet Our Leadership Team\n\nAallie Cooperative Tech Limited is led by experienced professionals with deep expertise in treasury management, financial technology, and cooperative finance systems. Our team combines technical excellence with intimate knowledge of Nigerian savings culture to deliver solutions that truly work for our communities.\n\nOur founder serves as Treasury Tech Lead, bringing years of experience in managing complex financial systems and ensuring the security and reliability of our platform. This expertise guarantees that your cooperative funds are managed with institutional-grade professionalism while remaining accessible to everyday Nigerians.\n\nWe are committed to building a fintech ecosystem that honors traditional Nigerian financial wisdom while embracing the possibilities of modern technology.",
+      "imagePrompt": "Professional Nigerian business executive in modern office, confident pose, contemporary Nigerian business attire, floor-to-ceiling windows with Lagos skyline view, natural lighting, warm and authoritative atmosphere, corporate portrait photography, photorealistic, shallow depth of field",
+      "layout": "centered"
     },
     {
       "id": "contact",
       "name": "Contact Us",
-      "copy": "Ready to start your next manufacturing project? Get in touch with MY Online Store today. Whether you have a detailed specification or just an idea, our team is ready to help bring your vision to life.\n\nVisit our facility at Plot C Block 125, Itele NLA Maya, Ikorodu, Lagos, Nigeria, or reach out by phone or WhatsApp. We respond promptly to all inquiries and look forward to partnering with your business.\n\nLet's build something exceptional together.",
-      "imagePrompt": "Professional Nigerian business office reception area, welcoming front desk, comfortable meeting space, modern interior design, large windows with natural light, Lagos cityscape visible, professional corporate photography, inviting and accessible atmosphere",
-      "layout": "centered"
+      "copy": "Get In Touch With Aallie\n\nReady to Transform Your Cooperative Savings?\n\nWhether you're starting a new esusu group, managing an existing cooperative, or exploring digital savings solutions, we're here to help. Contact us today to learn how Aallie can serve your financial community.\n\nVisit Our Office\n\nPlot C Block 125 Itele NLA Maya, Ikorodu, Lagos State, Nigeria\n\nCall or WhatsApp\n\n+234 803 395 6759\n\nOnline\n\nwww.aallie.org\n\nBusiness Hours\n\nMonday - Friday: 9:00 AM - 5:00 PM\nSaturday: 10:00 AM - 2:00 PM\nSunday: Closed\n\nSchedule a Demo\n\nInterested in seeing our platform in action? Request a personalized demonstration for your cooperative or savings group. Click below to schedule a convenient time.\n\nRequest Demo | Send WhatsApp Message",
+      "imagePrompt": "Modern Nigerian fintech office reception area, welcoming atmosphere, contemporary furniture with traditional Nigerian artistic touches, professional receptionist at sleek desk with computer, large windows showing Ikorodu neighborhood, plants and warm lighting, photorealistic architectural photography, inviting and professional",
+      "layout": "split"
+    },
+    {
+      "id": "faq",
+      "name": "Frequently Asked Questions",
+      "copy": "Common Questions About Aallie\n\nWhat is Aallie Cooperative Tech Limited?\n\nAallie (also known as Aallie Esusu Digital Co) is a Nigerian fintech platform that digitizes traditional cooperative savings systems like esusu. We provide secure, transparent tools for managing group savings, contributions, and disbursements.\n\nHow does digital esusu work?\n\nMembers register on our platform, agree on contribution amounts and schedules, then make regular digital payments. The system automatically tracks all contributions and manages payout rotations with complete transparency. Every transaction is recorded and accessible to authorized members.\n\nIs my money safe with Aallie?\n\nAbsolutely. We employ treasury-grade security measures and comply with Nigerian financial regulations. Our platform is led by experienced treasury technology professionals who prioritize the security of your funds. All transactions are encrypted and monitored.\n\nWhat types of groups can use Aallie?\n\nAny savings group can benefit: traditional esusu circles, cooperative societies, thrift collectors, investment clubs, community development associations, workplace savings groups, and family savings pools.\n\nHow much does it cost?\n\nWe offer flexible pricing based on group size and features needed. Contact us for a customized quote. We believe in transparent pricing with no hidden fees.\n\nDo I need special technical skills?\n\nNo. Our platform is designed to be user-friendly for everyone. If you can use WhatsApp or mobile banking, you can use Aallie. We also provide training and ongoing support.\n\nHow do members make contributions?\n\nMembers can contribute via bank transfer, debit card, or mobile money. We integrate with all major Nigerian payment platforms for maximum convenience.\n\nCan we customize the platform for our cooperative?\n\nYes. We work with each group to configure contribution schedules, payout rules, and administrative controls to match your specific needs and bylaws.\n\nWhat happens if a member misses a contribution?\n\nThe system sends automatic reminders before due dates. Groups can set their own policies for late payments. Our platform helps maintain accountability while allowing for flexibility when needed.\n\nHow do we get started?\n\nSimply contact us via phone or WhatsApp at +234 803 395 6759. We'll schedule a consultation to understand your needs and provide a demonstration of the platform tailored to your cooperative.",
+      "imagePrompt": "Diverse group of Nigerians in casual business attire having an engaged discussion around a conference table with laptops and tablets, colorful infographics on wall-mounted screen, modern collaborative workspace, natural lighting through large windows, warm and informative atmosphere, photorealistic corporate photography",
+      "layout": "default"
     }
   ],
   "contact": {
     "phone": "+234 803 395 6759",
-    "email": "info@myonlinestore.ng",
-    "address": "Plot C Block 125, Itele NLA Maya, Ikorodu, Lagos, Nigeria",
+    "email": "",
+    "address": "Plot C Block 125 Itele NLA Maya, Ikorodu, Lagos State, Nigeria",
     "whatsapp": "https://wa.me/2348033956759"
   }
 }
